@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Adding transparent background image */
+    background-image: url('adduu.png'); /* Replace with your transparent image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Header styles */
+header {
+    background-color: #141e6e; /* Ateneo Blue */
+    color: #eae2d1; 
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+/* Main content styles */
+main {
+    flex: 1; /* Ensures the main content expands to fill the remaining screen space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px; /* Limit content width */
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #1e2176; /* Ateneo Gold */
+    color: #a5a9c7; /* Ateneo Blue */
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3958e6; /* Darker Blue for hover effect */
+    color: #003b5c; /* Gold text on hover */
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1e2176; /* Ateneo Blue */
+    font-size: 18px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #c3bdaf; /* Ateneo Gold on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1e2176; /* Ateneo Blue */
+    color: #e4dccb; /* Ateneo Gold */
+    margin-top: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    button {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 24px;
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+}
+

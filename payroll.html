@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="payroll.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="left-content">
+            <div id="headerdiv"><h2>Simple Payroll</h2></div>
+
+            <div id="inputdiv">
+                <label class="inputlabel" for="employee1">Employee Name:</label>
+                <input id="employee1" class="alignright" type="text"><br>
+
+                <label class="inputlabel" for="days1">Days Worked:</label>
+                <input id="days1" class="alignright" type="number" min="0"><br>
+
+                <label class="inputlabel" for="rate1">Daily Rate:</label>
+                <input id="rate1" type="number" min="0"><br>
+
+                <label class="inputlabel" for="amount1">Deduction Amount:</label>
+                <input id="amount1" type="number" min="0"><br>
+            </div>
+
+            <button id="btnaddtotab">Add Employee</button><br><br>
+            <a href="index.html" id="homebtn">Back to Assignments</a>
+        </div>
+
+        <div id="right-content">
+            <div id="headerdiv"><h2>Table</h2></div>
+            <div id="cartdiv">
+                <table id="itemstable" border="1">
+                    <thead>
+                        <tr>
+                            <td>Employee No.</td>
+                            <td>Employee Name</td>
+                            <td>Days Worked</td>
+                            <td>Daily Rate</td>
+                            <td>Gross Pay</td>
+                            <td>Deduction Amount</td>
+                            <td>Net Pay</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody"></tbody>
+                </table>
+            </div>
+            <br>
+            <label class="inputline" for="delitem">Delete Employee No:</label>
+            <input id="delitem" type="number" min="1"><br><br>
+            <button id="btndelete">Delete</button><br><br>
+
+            <button id="btnclearcart">Clear Table</button>
+        </div>
+    </div>
+
+    <script src="payroll.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('adduu.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #1e2176; /* Dark blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+label {
+    display: inline-block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+input[type="number"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #1e2176; 
+    box-shadow: 0 0 5px rgba(30, 33, 118, 0.5);
+}
+
+
+input[readonly] {
+    background-color: #f0f0f0; 
+    cursor: not-allowed;
+}
+
+
+label, input {
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+    max-width: 320px;
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1e2176; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #141e6e; 
+
+
+@media (max-width: 480px) {
+    input[type="number"], button {
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+}

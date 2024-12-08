@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="conversion.css">
+    </head>
+<body>
+
+<h1>Conversion</h1>
+
+<div class="container1">
+    <h1>Temperature Conversion</h1>
+    <label for="tempInput">Temperature:</label>
+    <input id="tempInput" type="number" placeholder="0">
+    <button id="CtoF">Celsius to Fahrenheit</button>
+    <button id="FtoC">Fahrenheit to Celsius</button>
+    <input type="number" id="tempResult" readonly placeholder="Result">
+</div>
+
+<div class="container2">
+    <h2>Measurement Conversion</h2>
+    <label for="meaInput">Measurement:</label>
+    <input id="meaInput" type="number" placeholder="0" min="0">
+    <button id="MtoF">Meters to Feet</button>
+    <button id="FtoM">Feet to Meters</button>
+    <input type="number" id="meaResult" readonly placeholder="Result">
+</div>
+
+<br>
+
+<!-- Back to Assignments button -->
+<div id="backButtonContainer">
+    <button id="backToAssignments" onclick="window.location.href='index.html'">Back to Assignments</button>
+</div>
+
+</body>
+<script src="conversion.js"></script>
+</html>
